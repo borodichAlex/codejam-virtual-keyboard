@@ -1,7 +1,7 @@
 # Virtual keyboard
 
-## task[https://github.com/rolling-scopes-school/tasks/blob/master/tasks/codejam-virtual-keyboard.md]
-## solution[https://borodichalex.github.io/codejam-virtual-keyboard/]
+## [Task](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/codejam-virtual-keyboard.md)
+## [Solution](https://borodichalex.github.io/codejam-virtual-keyboard/)
 
 ## Prerequisites
 1. Install Node.js

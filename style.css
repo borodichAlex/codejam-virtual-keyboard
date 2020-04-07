@@ -26,9 +26,25 @@ p {
 
 .keyboard {
   margin: 0 auto;
-  max-width: 56%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 1020px) {
+  .keyboard {
+    max-width: 80%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .keyboard {
+    max-width: 68%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .keyboard {
+    max-width: 56%;
+    max-width: 1050px;
+  }
 }
 .keyboard textarea {
   height: 25vh;

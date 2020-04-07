@@ -205,24 +205,20 @@ const Keyboard = {
   },
 
   init() {
-    // Create main elements
     this.elements.main = document.createElement('div');
     this.elements.keysContainer = document.createElement('div');
     this.elements.textarea = document.createElement('textarea');
 
-    // Setup main elements
     this.elements.main.classList.add('keyboard');
     this.elements.keysContainer.classList.add('keyboard__keys');
     this.elements.keysContainer.append(...(this.createKeys()));
 
     this.elements.keys = this.elements.keysContainer.querySelectorAll('.keyboard__key');
 
-    // Add to DOM
     this.elements.main.append(this.elements.textarea);
     this.elements.main.append(this.elements.keysContainer);
     document.body.prepend(this.elements.main);
 
-    // Setup Language
     if (sessionStorage.Lang === undefined) sessionStorage.setItem('Lang', 'RU');
     sessionStorage.Lang = (sessionStorage.Lang === 'RU') ? 'EN' : 'RU';
     this.toggleLang();
@@ -359,7 +355,6 @@ const Keyboard = {
         }
       });
     }
-    // this.properties.space = sessionStorage.Lang;
   },
 
   shiftUp() {

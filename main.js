@@ -89,7 +89,7 @@ const Keyboard = {
         code: 'BracketRight', keyRU: 'ъ', keyShiftRU: 'Ъ', keyENG: ']', keyShiftENG: '}',
       },
       {
-        code: 'BracketRight', keyRU: '\\', keyShiftRU: '/', keyENG: '\\', keyShiftENG: '|',
+        code: 'Backslash', keyRU: '\\', keyShiftRU: '/', keyENG: '\\', keyShiftENG: '|',
       },
       {
         code: 'Delete', keyRU: 'Del',

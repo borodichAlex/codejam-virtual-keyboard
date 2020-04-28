@@ -28,7 +28,7 @@ const Keyboard = {
     this.elements.main.append(this.elements.keysContainer);
     document.body.prepend(this.elements.main);
 
-    if (sessionStorage.Lang === undefined) sessionStorage.setItem('Lang', 'RU');
+    if (!sessionStorage.Lang) sessionStorage.setItem('Lang', 'RU');
     sessionStorage.Lang = (sessionStorage.Lang === 'RU') ? 'EN' : 'RU';
     this.toggleLang();
 

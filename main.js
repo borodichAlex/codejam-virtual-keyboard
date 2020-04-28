@@ -64,7 +64,7 @@ const Keyboard = {
         }
       }
 
-      this.oninput(key);
+      this.onInput(key);
     });
 
     document.addEventListener('keyup', (event) => {
@@ -119,7 +119,7 @@ const Keyboard = {
         default: break;
       }
 
-      this.oninput(key);
+      this.onInput(key);
     });
 
     document.addEventListener('mouseup', () => {
@@ -244,7 +244,7 @@ const Keyboard = {
     }
   },
 
-  oninput(key) {
+  onInput(key) {
     const text = this.elements.textarea;
     const textInner = this.elements.textarea.innerHTML;
     let posCursor = text.selectionStart;

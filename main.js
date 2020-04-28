@@ -37,7 +37,7 @@ const Keyboard = {
     });
 
     document.addEventListener('keydown', (event) => {
-      const keyIndex = this.properties.keysArr.findIndex((item) => item.code === event.code);
+      const keyIndex = this.properties.keysArr.findIndex(({ code }) => code === event.code);
       const key = this.elements.keys[keyIndex];
 
       if (!key) return;
@@ -68,7 +68,7 @@ const Keyboard = {
     });
 
     document.addEventListener('keyup', (event) => {
-      const keyIndex = this.properties.keysArr.findIndex((item) => item.code === event.code);
+      const keyIndex = this.properties.keysArr.findIndex(({ code }) => code === event.code);
       const key = this.elements.keys[keyIndex];
 
       if (!key) return;

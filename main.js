@@ -331,8 +331,12 @@ const Keyboard = {
 
   createKeys() {
     const result = [];
-    let rowLayout = document.createElement('div');
-    rowLayout.classList.add('keyboard__row');
+    const createRow = () => {
+      const row = document.createElement('div');
+      row.classList.add('keyboard__row');
+      return row;
+    };
+    let rowLayout = createRow();
 
     this.properties.keysArr.forEach((key) => {
       const keyElement = document.createElement('button');
@@ -364,9 +368,7 @@ const Keyboard = {
 
       if (newRow) {
         result.push(rowLayout);
-
-        rowLayout = document.createElement('div');
-        rowLayout.classList.add('keyboard__row');
+        rowLayout = createRow();
       }
     });
     return result;

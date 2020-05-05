@@ -290,7 +290,7 @@ export default [
     code: 'AltLeft',
   },
   {
-    lower: ' ',
+    lower: 'RU',
     upper: null,
     code: 'Space',
   },

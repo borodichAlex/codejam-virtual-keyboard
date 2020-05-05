@@ -4,4 +4,5 @@ module.exports = {
 		"browser": true
 	},
 	"parser": "babel-eslint",
+	"import/extensions": ["always"],
 };

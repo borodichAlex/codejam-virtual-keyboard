@@ -11,8 +11,7 @@
     "eslint-plugin-import": "^2.20.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch assets/sass/main.scss ./style.css --no-source-map"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

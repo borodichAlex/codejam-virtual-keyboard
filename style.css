@@ -24,29 +24,7 @@ p {
   color: #49586e;
 }
 
-.keyboard {
-  margin: 0 auto;
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-@media screen and (min-width: 1020px) {
-  .keyboard {
-    max-width: 80%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .keyboard {
-    max-width: 68%;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .keyboard {
-    max-width: 56%;
-    max-width: 1050px;
-  }
-}
-.keyboard textarea {
+textarea {
   height: 25vh;
   margin-bottom: 1.5em;
   resize: none;
@@ -58,7 +36,30 @@ p {
   outline: none;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
-.keyboard__keys {
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1020px) {
+  .wrapper {
+    max-width: 80%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    max-width: 68%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    max-width: 56%;
+    max-width: 1050px;
+  }
+}
+.keyboard {
   box-sizing: border-box;
   border-radius: 0.5em;
   background-color: rgba(0, 0, 0, 0.5);

@@ -41,6 +41,9 @@ export default class Keyboard {
 
       const newRow = ['Backspace', 'Delete', 'Enter', 'ShiftRight'].indexOf(button.code) !== -1;
 
+      if (button.code === 'Space') {
+        this.space = button.elem;
+      }
       rowLayout.append(button.elem);
       this.layoutButtons.push(button);
 
@@ -65,6 +68,9 @@ export default class Keyboard {
       const key = this.layoutButtons.find(({ elem }) => elem.classList.contains('keyboard__key--active'));
       if (!key) return;
       key.elem.classList.remove('keyboard__key--active');
+    });
+    this.space.addEventListener('dblclick', () => {
+      this.switchLang();
     });
   }
 

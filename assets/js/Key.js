@@ -25,6 +25,12 @@ export default class Key {
       default:
         this.elem.classList.add('keyboard__key');
     }
-    this.elem.textContent = lower;
+    this.elem.textContent = this.lower;
+  }
+
+  change(lower, upper) {
+    this.lower = lower;
+    this.upper = upper;
+    this.elem.textContent = this.lower;
   }
 }

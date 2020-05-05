@@ -145,7 +145,7 @@ export default [
     code: 'Delete',
   },
   {
-    lower: 'CapsLock',
+    lower: 'Caps Lock',
     upper: null,
     code: 'CapsLock',
   },
@@ -265,11 +265,6 @@ export default [
     code: 'Slash',
   },
   {
-    lower: '.',
-    upper: ',',
-    code: 'Slash',
-  },
-  {
     lower: '🠕',
     upper: null,
     code: 'ArrowUp',
@@ -285,9 +280,9 @@ export default [
     code: 'ControlLeft',
   },
   {
-    lower: 'Win', //OSLeft
+    lower: 'Win',
     upper: null,
-    code: 'Win',
+    code: 'OSRight',
   },
   {
     lower: 'Alt',
